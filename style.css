@@ -1,0 +1,50 @@
+:root {
+    --color-1: #584B5A;
+    --color-2: #312D2D;
+    --color-3: #6B7182;
+    --color-4: #AFB3C1;
+    --color-5: #7B402D;
+}
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+body {
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    }
+header {
+    display: inline-flex;
+    flex-direction: row;
+    background-color: var(--color-2);
+    opacity: 0.7;
+    width: 100%;
+}
+nav ul {
+    display: inline;
+    list-style: none;
+}
+.pimg1,
+.pimg2,
+.pimg3 {
+    position: relative;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+}
+.pimg1 {
+    background-image: url(/img/providence-doucet-wPaBwop_rSo-unsplash\ \(1\).jpg);
+    height: 400px;
+}
+.pimg2 {
+    background-image: url(/img/haroon-mohammad-arif--5JBtwhShyQ-unsplash.jpg);
+    height: 200px;
+}
+.pimg3 {
+    background-image: url(/img/larisa-birta-slbOcNlWNHA-unsplash.jpg);
+    height: 200px;
+}
