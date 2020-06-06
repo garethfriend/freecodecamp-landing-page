@@ -1,9 +1,9 @@
 :root {
-    --color-1: #584B5A;
-    --color-2: #312D2D;
-    --color-3: #6B7182;
-    --color-4: #AFB3C1;
-    --color-5: #7B402D;
+    --color-1: #554858;
+    --color-2: #382D2B;
+    --color-3: #6683A4;
+    --color-4: #A3AABA;
+    --color-5: #905038;
 }
 * {
     margin: 0;
@@ -19,20 +19,29 @@ body {
     font-size: 16px;
     }
 header {
-    display: grid;
-    grid-template-columns: 100px 1fr 250px;
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    grid-template-rows: 1fr;
+    grid-template-columns: 100px 1fr;
     align-items: baseline;
     background-color: var(--color-2);
     color: white;
     width: 100%;
     border-bottom: solid var(--color-5) 2px;
-    padding: 20px 20px 20px 20px;
+    padding: 10px 20px;
+    /* height: 50px; */
 }
 #header-img {
-    max-height: 100px;
-    max-width: 100px;
-    width: 100%;
-    text-align: right;
+    max-height: 50px;
+    max-width: 50px;
+    align-self: flex-end;
+    gri
+}
+#header-div {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
 }
 #title {
     font-size: 30px;
@@ -44,12 +53,14 @@ header {
         font-size: 24px;
     }
     #nav-bar {
-        margin-left: 100px;
-        margin-top: 5px;
+        margin-left: 50px;
     }
     header {
         display: flex;
         flex-wrap: wrap;
+    }
+    .img-words {
+        font-size: 20px;
     }
 }
 nav ul {
@@ -77,7 +88,7 @@ nav ul {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    opacity: 0.7;
+    opacity: 0.9;
     display: grid;
     align-items: center center;
 }
@@ -96,6 +107,22 @@ nav ul {
 #video {
     margin: 20px auto;
 }
+table {
+    margin: 10px auto;
+    border-collapse: collapse;
+    border: 2px solid rgb(200, 200, 200);
+    letter-spacing: 1px;
+}
+td,
+th {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 5px 10px;
+}
+
+td {
+    text-align: center;
+}
+
 .section-light,
 .section-dark {
     font-size: 16px;
@@ -111,11 +138,26 @@ nav ul {
     background-color: var(--color-2);
     color: var(--color-4);
 }
+footer {
+    background-color: var(--color-5);
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .img-words {
-    color: #ffffff;
-    border: solid #ffffff 3px;
-    font-size: large;
+    color: white;
+    /* border: solid #ffffff 3px; */
+    font-size: 40px;
     padding: 1em;
     margin: auto;
     text-transform: uppercase;
+}
+h2 {
+    margin-bottom: 20px;
+}
+p {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
